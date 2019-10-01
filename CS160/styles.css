@@ -1,0 +1,12 @@
+h1 {
+    color: green;
+    font-size: 36pt;
+    border: 5px solid cornflowerblue;
+    margin: 10pt auto;    
+}
+
+h2 {
+    color: cornflowerblue;
+    font-size: 24pt;
+    margin: 5pt auto;
+}
