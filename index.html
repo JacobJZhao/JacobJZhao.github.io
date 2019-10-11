@@ -11,8 +11,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
 
     <!-- Bootstrap core CSS -->
-   <link href="./CS160/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./CS160/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
       .bd-placeholder-img {
@@ -50,9 +50,13 @@
             <a class="dropdown-item" href="#">Python</a>
           </div>
          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.google.com/document/d/1TwAnovLm6GntpspfJ6msIuFFqiI99qEFEZkc_JuorzU/edit?usp=sharing">Book Questions</a>
-          </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Book Questions</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="https://docs.google.com/document/d/1TwAnovLm6GntpspfJ6msIuFFqiI99qEFEZkc_JuorzU/edit?usp=sharing">CODE</a>
+            <a class="dropdown-item" href="#">Dreaming in Code</a>
+          </div>
+         </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
@@ -88,9 +92,9 @@
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#66E5C7"/>></svg>
         <div class="container">
           <div class="carousel-caption">
-            <h1 style="color:darkslategray">Another example headline.</h1>
-            <p style="color: darkslategray">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button" style="background-color: darkslategray; border-color: black; color: #66E5C7"> Browse Gallery</a></p>
+            <h1 style="color:darkslategray; font-family:monospace; font-size: 35px">This is also an h1 Heading</h1>
+            <p style="color: darkslategray; font-family: monospace; font-size: 20px">This font is "Monospace", and this slide's color scheme is really cool. Click the button to browse a miscellaneous gallery!</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button" style="background-color: darkslategray; border-color: black; color: #66E5C7; font-family: monospace; font-size: larger"> Browse Gallery</a></p>
           </div>
         </div>
       </div>
@@ -98,8 +102,8 @@
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#3EB227"/></svg>
         <div class="container">
           <div class="carousel-caption text-right">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <h1>One more for good measure</h1>
+            <p>This is the default font for Bootstrap paragraphs, done through a .css file! Below is a disabled button.</p>
             <!-- <p><a class="btn btn-lg btn-primary" role="button">Disabled button</a></p> -->
             <button type="button" class="btn btn-lg btn-primary" disabled>Disabled Button</button>
           </div>
@@ -152,11 +156,12 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <h2 class="featurette-heading">Here's a picture of a dog. <span class="text-muted">Who's a good boy?</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
       <div class="col-md-5">
-        <iframe src="https://scratch.mit.edu/projects/333103449/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <img class="featurette-image img-fluid mx-auto" width="500px" height="500px" src="./images/pupper.png">
+        <!-- <iframe src="https://scratch.mit.edu/projects/333103449/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
         <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
       </div>
     </div>
