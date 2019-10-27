@@ -26,6 +26,7 @@
     div{
         margin-top: 20px;
         margin-bottom: 20px;
+        position: relative;
     }
 
     h2{
@@ -35,6 +36,56 @@
         color: darkolivegreen;
         font-size: 20px;
     }
+    table{
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .img {
+        max-height: 100%;
+        max-width: 50%;
+        width: auto;
+        height: auto;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        margin: auto;
+    }
+    .imgright {
+        max-height: 100%;
+        max-width: 50%;
+        width: auto;
+        height: auto;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        margin: auto;
+    }
+    .textdiv{
+        max-width: 50%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: 0pt;
+    }
+    .textdivleft{
+        max-width: 50%;
+        max-height: 100%;
+        margin-left: 0pt;
+        margin-right: auto;
+    }
 </style>
 </head>
 <body>
@@ -43,13 +94,154 @@
 
     <div>
         <h2 class="text-center mb-3" ><a href="https://oregonstate.edu/">Oregon State Univeristy</a></h2>
-        <img src="../images/osu.jpg" style="float: left; border-color: black; border-style: solid">
+        <img src="../images/osu.jpg" style="float: left; border-color: black; border-style: solid" class = "img">
+        <div class="textdiv">
         <p class="text-center">Oregon State Univeristy has two campuses, with the primary campus located in Corvallis, Oregon. In addition to 200+ academic programs, OSU features 14 experiment stations and 36 Extension offices. OSU is commited to "engaging in exceptional research, discovery, and innovation", and instills in their graduates critical thinking skills, a thirst for knowledge, and determination to impact the world. OSU offers CS pathways of various difficulties, from simple sensor boards to cloud-based datacenters. OSU does not specialize in any specific area of CS, but instead provides its students with a basic foundation of CS knowledge.</p>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Term</th>
+                <th>Course Names</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Fall</td>
+                <td>CS 160, MTH 251, WR 121, HHS 231/241/PAC</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Winter</td>
+                <td>CS 161, MTH 252, COMM 111/114, Biological Science</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Spring</td>
+                <td>CS 162, MTH 231, Cultural Diveristy, Western Culture</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Fall</td>
+                <td>CS 261, MTH 254, PH 211/221, Lit and Arts</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Winter</td>
+                <td>WR 214/222, MTH 306, PH 212/222, Social Processes</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Spring</td>
+                <td>CS 290, ECE 271/272, PH 213/223, ST 314</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Fall</td>
+                <td>CS 344, CS 361, CS 321, WR 327</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Winter</td>
+                <td>ECE 375, CS 362, CS 381, Difference, Power, Discrimination</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Spring</td>
+                <td>CS 372, CS 340, CS 325, Synthesis of Global Issue</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Fall</td>
+                <td>CS 444, CS 461, CS Elective, CS/Science/ENGR/Arts Elective</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Winter</td>
+                <td>CS 391, CS 462, CS 480, CS/Science/ENGR/Arts Elective</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Spring</td>
+                <td>CS 472, CS 463, CS Elective x2</td>
+            </tr>
+            
+        </table>
+        </div>
     </div>
 
     <div>
         <h2 class="text-center"><a href="http://www.ucla.edu/">University of California: Los Angeles</a></h2>
-
+        <img src="../images/ucla.jpg" style="float: right; margin-left: auto; margin-right: 0pt; border-color: black; border-style: solid" class="imgright">
+        <div class="textdivleft">
+        <p class="text-center">Univeristy of California: Los Angeles is based in Los Angeles, and was founded in the year 1919. Graduates include 14 Nobel Laureates, 15 MacArthur Fellows, and 200+ Olympic Medalists. UCLA "doubts the critics, rejects the status quo and sees opportunity in dissatisfaction. Our campus, faculty and students are driven by optimism. It is not naïve; it is essential. And it has fueled every accomplishment, allowing us to redefine what's possible, time after time." UCLA's CS program takes students on a journey through designing, developing, and producing software, but also encourages the growth of speaking and professional skills. For CS students, UCLA features a career center where students can look for opportunities in companies like Boeing, Sony Pictures, and Toyota.</p>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Term</th>
+                <th>Course Names</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Fall</td>
+                <td>CS 1, CS 31, ENG 3, MTH 31A</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Winter</td>
+                <td>CS 32, MTH 31B, PH 1A</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Spring</td>
+                <td>CS 33, MTH 32A, PH 1B</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Fall</td>
+                <td>CS 35L, CS M51A or ECE M16, MTH 32B</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Winter</td>
+                <td>MTH 33A, MTH 61, PH 1C, PH 4AL or PH 4BL</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Spring</td>
+                <td>CS 111, CS M152A, MTH 33B, Technical Elective</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Fall</td>
+                <td>CS 118, CS 180, Technical Elective x2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Winter</td>
+                <td>CS 131, CS M151B, Technical Elective, Probability</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Spring</td>
+                <td>CS 181, CS M152A, Technical Elective, ECE 17A</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Fall</td>
+                <td>CS 130, CS 152B, Technical Elective, ECE 17B</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Winter</td>
+                <td>CS Electives x2, ECE 18A</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Spring</td>
+                <td>CS Elective, ECE 18B, ME 101</td>
+            </tr>
+            
+        </table>
+        </div>
     </div>
 
     <h5 class="my-5"><a href="../index.html">Return to Homepage</a></h3>
