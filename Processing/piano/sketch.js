@@ -16,7 +16,7 @@ function draw(){
     if(key === 'u'){
       D4.play();
     }
-    elif(key === 'y'){
+    else if(key === 'y'){
       C4.play();
     }
   }
