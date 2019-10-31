@@ -12,17 +12,16 @@ function setup() {
 }
 
 function draw(){
-  if(keyIsPressed(89)){
+  if(keyIsDown(89)){
     C4.play();
   }
   else{
     C4.stop();
   }
   
-  if(keyIsPressed(85)){
-    D4.play();
-  }
-  else{
-    D4.stop();
+  if(keyIsPressed){
+    if(key === 'D'){
+      D4.play();
+    }
   }
 }
