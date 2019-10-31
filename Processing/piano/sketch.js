@@ -12,14 +12,14 @@ function setup() {
 }
 
 function draw(){
-  if(keyIsDown(89)){
+  if(keyIsPressed(89)){
     C4.play();
   }
   else{
     C4.stop();
   }
   
-  if(keyIsDown(85)){
+  if(keyIsPressed(85)){
     D4.play();
   }
   else{
