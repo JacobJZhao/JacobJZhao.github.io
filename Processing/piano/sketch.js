@@ -12,10 +12,12 @@ function setup() {
 }
 
 function draw(){
-}
-
-function keyPressed(){
-  if(key === 'y'){
-    C4.play();
+  if(keyIsPressed){
+    if(key === 'u'){
+      D4.play();
+    }
+    elif(key === 'y'){
+      C4.play();
+    }
   }
 }
