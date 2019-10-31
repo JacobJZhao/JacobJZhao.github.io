@@ -12,4 +12,7 @@ function draw(){
   if(keyIsDown(89)){
     C.play();
   }
+  else{
+    C.stop();
+  }
 }
