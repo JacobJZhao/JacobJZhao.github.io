@@ -6,10 +6,10 @@ function preload() {
 function setup() {
   createCanvas(200, 200);
   background(0);
-  C.play();
-  C.setVolume(1);
 }
 
 function draw(){
-  //C.play();
+  if(keyIsDown(89)){
+    C.play();
+  }
 }
