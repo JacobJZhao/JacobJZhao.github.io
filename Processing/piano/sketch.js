@@ -12,36 +12,46 @@ function preload() {
  
 function setup() {
   createCanvas(200, 200);
-  background(0);
+  textSize(50);
   C4.setVolume(1);
   D4.setVolume(1);
 }
 
 function draw(){
+  background(0);
+  fill(255);
   if(keyIsPressed){
     if(key === 'u'){
       D4.play();
+      test('D4', 100, 100);
     }
     if(key === 'y'){
       C4.play();
+      test('C4', 100, 100);
     }
     if(key == 'i'){
       E4.play();
+      test('E4', 100, 100);
     }
     if(key === 'o'){
       F4.play();
+      test('F4', 100, 100);
     }
     if(key === 'p'){
       G4.play();
+      test('G4', 100, 100);
     }
     if(key === '['){
       A4.play();
+      test('A4', 100, 100);
     }
     if(key === ']'){
       B4.play();
+      test('B4', 100, 100);
     }
     if(key === "\\"){
       C5.play();
+      test('C4', 100, 100);
     }
   }
 }
