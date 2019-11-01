@@ -51,7 +51,7 @@ function draw(){
     }
     if(key === "\\"){
       C5.play();
-      text('C4', 100, 100);
+      text('C5', 100, 100);
     }
   }
 }
