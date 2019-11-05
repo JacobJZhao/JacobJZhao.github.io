@@ -23,7 +23,7 @@ function draw(){
   if(keyIsPressed){
     if(key === 'u'){
       D4.play();
-      text('D4', 100, 100);
+      text('D4', 75, 75);
     }
     if(key === 'y'){
       C4.play();
