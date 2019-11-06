@@ -23,35 +23,35 @@ function draw(){
   if(keyIsPressed){
     if(key === 'u'){
       D4.play();
-      text('D4', 75, 125);
+      text('D4', 75, 115);
     }
     if(key === 'y'){
       C4.play();
-      text('C4', 75, 125);
+      text('C4', 75, 115);
     }
     if(key == 'i'){
       E4.play();
-      text('E4', 75, 125);
+      text('E4', 75, 115);
     }
     if(key === 'o'){
       F4.play();
-      text('F4', 75, 125);
+      text('F4', 75, 115);
     }
     if(key === 'p'){
       G4.play();
-      text('G4', 75, 125);
+      text('G4', 75, 115);
     }
     if(key === '['){
       A4.play();
-      text('A4', 75, 125);
+      text('A4', 75, 115);
     }
     if(key === ']'){
       B4.play();
-      text('B4', 75, 125);
+      text('B4', 75, 115);
     }
     if(key === "\\"){
       C5.play();
-      text('C5', 75, 125);
+      text('C5', 75, 115);
     }
   }
 }
