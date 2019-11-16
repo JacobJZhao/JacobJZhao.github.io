@@ -16,5 +16,142 @@ CHIP Mux4Way16 {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    Not(in=sel[0], out=rsel0);
+    Not(in=sel[1], out=rsel1);
+    And(a=rsel0, b=rsel1, out=da);
+    And(a=sel[0], b=rsel1, out=db);
+    And(a=rsel0, b=sel[1], out=dc);
+    And(a=sel[0], b=sel[1], out=dd);
+
+    And(a=a[0], b=da, out=aout0);
+    And(a=a[1], b=da, out=aout1);
+    And(a=a[2], b=da, out=aout2);
+    And(a=a[3], b=da, out=aout3);
+    And(a=a[4], b=da, out=aout4);
+    And(a=a[5], b=da, out=aout5);
+    And(a=a[6], b=da, out=aout6);
+    And(a=a[7], b=da, out=aout7);
+    And(a=a[8], b=da, out=aout8);
+    And(a=a[9], b=da, out=aout9);
+    And(a=a[10], b=da, out=aout10);
+    And(a=a[11], b=da, out=aout11);
+    And(a=a[12], b=da, out=aout12);
+    And(a=a[13], b=da, out=aout13);
+    And(a=a[14], b=da, out=aout14);
+    And(a=a[15], b=da, out=aout15);
+
+    And(a=b[0], b=db, out=bout0);
+    And(a=b[1], b=db, out=bout1);
+    And(a=b[2], b=db, out=bout2);
+    And(a=b[3], b=db, out=bout3);
+    And(a=b[4], b=db, out=bout4);
+    And(a=b[5], b=db, out=bout5);
+    And(a=b[6], b=db, out=bout6);
+    And(a=b[7], b=db, out=bout7);
+    And(a=b[8], b=db, out=bout8);
+    And(a=b[9], b=db, out=bout9);
+    And(a=b[10], b=db, out=bout10);
+    And(a=b[11], b=db, out=bout11);
+    And(a=b[12], b=db, out=bout12);
+    And(a=b[13], b=db, out=bout13);
+    And(a=b[14], b=db, out=bout14);
+    And(a=b[15], b=db, out=bout15);
+
+    And(a=c[0], b=dc, out=cout0);
+    And(a=c[1], b=dc, out=cout1);
+    And(a=c[2], b=dc, out=cout2);
+    And(a=c[3], b=dc, out=cout3);
+    And(a=c[4], b=dc, out=cout4);
+    And(a=c[5], b=dc, out=cout5);
+    And(a=c[6], b=dc, out=cout6);
+    And(a=c[7], b=dc, out=cout7);
+    And(a=c[8], b=dc, out=cout8);
+    And(a=c[9], b=dc, out=cout9);
+    And(a=c[10], b=dc, out=cout10);
+    And(a=c[11], b=dc, out=cout11);
+    And(a=c[12], b=dc, out=cout12);
+    And(a=c[13], b=dc, out=cout13);
+    And(a=c[14], b=dc, out=cout14);
+    And(a=c[15], b=dc, out=cout15);
+
+    And(a=d[0], b=dd, out=dout0);
+    And(a=d[1], b=dd, out=dout1);
+    And(a=d[2], b=dd, out=dout2);
+    And(a=d[3], b=dd, out=dout3);
+    And(a=d[4], b=dd, out=dout4);
+    And(a=d[5], b=dd, out=dout5);
+    And(a=d[6], b=dd, out=dout6);
+    And(a=d[7], b=dd, out=dout7);
+    And(a=d[8], b=dd, out=dout8);
+    And(a=d[9], b=dd, out=dout9);
+    And(a=d[10], b=dd, out=dout10);
+    And(a=d[11], b=dd, out=dout11);
+    And(a=d[12], b=dd, out=dout12);
+    And(a=d[13], b=dd, out=dout13);
+    And(a=d[14], b=dd, out=dout14);
+    And(a=d[15], b=dd, out=dout15);
+
+    Or(a=aout0, b=bout0, out=w1);
+    Or(a=cout0, b=dout0, out=w2);
+    Or(a=w1, b=w2, out=out[0]);
+
+    Or(a=aout1, b=bout1, out=w3);
+    Or(a=cout1, b=dout1, out=w4);
+    Or(a=w3, b=w4, out=out[1]);
+
+    Or(a=aout2, b=bout2, out=w5);
+    Or(a=cout2, b=dout2, out=w6);
+    Or(a=w5, b=w6, out=out[2]);
+
+    Or(a=aout3, b=bout3, out=w7);
+    Or(a=cout3, b=dout3, out=w8);
+    Or(a=w7, b=w8, out=out[3]);
+
+    Or(a=aout4, b=bout4, out=wa);
+    Or(a=cout4, b=dout4, out=wa2);
+    Or(a=wa, b=wa2, out=out[4]);
+
+    Or(a=aout5, b=bout5, out=wb);
+    Or(a=cout5, b=dout5, out=wb2);
+    Or(a=wb, b=wb2, out=out[5]);
+
+    Or(a=aout6, b=bout6, out=wc);
+    Or(a=cout6, b=dout6, out=wc2);
+    Or(a=wc, b=wc2, out=out[6]);
+
+    Or(a=aout7, b=bout7, out=wd);
+    Or(a=cout7, b=dout7, out=wd2);
+    Or(a=wd, b=wd2, out=out[7]);
+
+    Or(a=aout8, b=bout8, out=we);
+    Or(a=cout8, b=dout8, out=we2);
+    Or(a=we, b=we2, out=out[8]);
+
+    Or(a=aout9, b=bout9, out=w9);
+    Or(a=cout9, b=dout9, out=w92);
+    Or(a=w9, b=w92, out=out[9]);
+
+    Or(a=aout10, b=bout10, out=w10);
+    Or(a=cout10, b=dout10, out=w102);
+    Or(a=w10, b=w102, out=out[10]);
+    
+    Or(a=aout11, b=bout11, out=w11);
+    Or(a=cout11, b=dout11, out=w112);
+    Or(a=w11, b=w112, out=out[11]);
+
+    Or(a=aout12, b=bout12, out=w12);
+    Or(a=cout12, b=dout12, out=w122);
+    Or(a=w12, b=w122, out=out[12]);
+
+    Or(a=aout13, b=bout13, out=w13);
+    Or(a=cout13, b=dout13, out=w132);
+    Or(a=w13, b=w132, out=out[13]);
+
+    Or(a=aout14, b=bout14, out=w14);
+    Or(a=cout14, b=dout14, out=w142);
+    Or(a=w14, b=w142, out=out[14]);
+
+    Or(a=aout15, b=bout15, out=w15);
+    Or(a=cout15, b=dout15, out=w152);
+    Or(a=w15, b=w152, out=out[15]);
 }
